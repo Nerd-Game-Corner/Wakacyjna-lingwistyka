@@ -41,7 +41,6 @@ Każde zadanie ma informację o priorytecie (1 &ndash; największy, 5 &ndash; na
 Należy się spodziewać, że ta lista może zostać rozszerzona w przyszłości.
 
 * Dopasowywanie od kilku do kilkunastu transkrypcji fonetycznych do ich spektrogramów (1; fonetyka).
-* Dopasowywanie 
 * Dopasowywanie od kilku do kilkunastu transkrypcji fonetycznych do nagrań słów (1; fonetyka).
 * Odróżnianie par minimalnych między podobnymi dźwiękami, np. polskie "sz" vs "ś", czy różne tony języków t.j. chiński (3; fonetyka).
 * Decydowanie, jakiezmiany fonetyczne można zaobserwować w języku z pytaniami zamkniętymi (2; fonetyka, językoznawstwo historyczno-porównawcze)
