@@ -18,7 +18,12 @@ Mają oni wysokie zainteresowanie projektem, ale mały wpływ na projekt.
 * **Profesorowie lingwistyki** &mdash; osoby uczące studentów linwgistyki na uczelniach wyższych.
 Szukają oni łatwo dostępnych narzędzi do nauki, które mogą zarekomendować swoim studentom, zamiast musieć samemu przygotowywać materiały ćwiczeniowe.
 Ich celem jest uproszczenie swojej pracy i szybkie znalezienie prostego w obsłudze narzędzia, które wspiera studentów.
-Mają oni średnie zainteresowanie projektem i mały wpływa na niego.
+Mają oni średnie zainteresowanie projektem i mały wpływ na niego.
+
+* **Twórca contentu strony** (Diego) &mdash; osoba chcąca podzielić się w łatwy sposób swoją wiedzą ze studentami lingwistyki.
+Chce ona mieć narzędzie do prostego tworzenia interaktywnych zadań, w których może zamieszczać podpowiedzi oraz wyczerpujące wytłumaczenia rozwiązań.
+Jej celem jest stanie się bardziej znanym od strony pedagogicznej i popularnonaukowej w świecie lingwistyki.
+Ma ona wysokie zainteresowanie projektem i spory wpływ na niego.
 
 ## Wymagania biznesowe
 
@@ -46,3 +51,10 @@ Należy się spodziewać, że ta lista może zostać rozszerzona w przyszłości
 * Decydowanie, jakiezmiany fonetyczne można zaobserwować w języku z pytaniami zamkniętymi (2; fonetyka, językoznawstwo historyczno-porównawcze)
 * Decydowanie, gdzie w przedstawionym materiale językowym widać regularne zmiany fonetyczne, a gdzie widać zmiany przez analogię (4; fonetyka, językoznawstwo historyczno-porównawcze, morfologia).
 * Przydzielanie języka na podstawie kilku przykładów z glosami do jednego z głównych typów morfosyntaktycznych (3; morfologia, składnia).
+* Interaktywna wersja zadań z olimpiad lingwistycznych (5; wszystkie działy).
+
+## Przykładowe historyjki użytkowników
+
+1. Jako profesor lingwistyki chcę znaleźć gotowe, proste w użyciu narzędzie, które uzupełni materiał zawarty w stosowanym przeze mnie podręczniku, aby je podesłać moim studentom i mieć mniej pracy.
+2. Jako student lingwistyki chcę poćwiczyć moją znajomość IPA i rozróżnianie róźnych dźwięków mowy przed najbliższym sprawdzianem na uniwersytecie, aby polepszyć swoje umiejętności fonetyczne i dostać lepszą ocenę.
+3. Jako twórca contentu chcę szybko zrealizować swój nowy pomysł na zadanie i zamieścić go online, aby inni mogli z tego korzystać i dzielili się wiedzą o stronie.
