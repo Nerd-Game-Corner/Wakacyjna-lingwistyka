@@ -1,0 +1,45 @@
+@startuml shshs
+
+actor "Student" as st
+participant "Website" as wbs
+participant "HTTPS server" as srv
+participant "Exercise\ncontroller" as exc
+participant "Data file\nsystem" as data
+activate srv
+st -> wbs ++ : Enter URL
+
+wbs -> srv : GET /main
+alt correct request\n& cookie exists
+    srv --> wbs : 200 /main
+else cookie does not exist
+    srv --> wbs : 200 /main + cookie
+else wrong request
+    srv --> wbs : 400 error
+    destroy wbs
+end
+wbs -[hidden]-> srv
+activate wbs
+wbs --> st : Show main website
+st -> wbs : Choose exercise
+wbs -> srv : GET /<exercise>
+srv -> data : Find exercise data
+alt exercise data exist
+    data --> srv : Exercise data
+    srv -> exc : Generate exercise HTML
+    activate exc
+    exc --> srv : Exercise HTML
+    srv --> wbs : 200 /<exercise>
+else exercise data do not exist
+    data --> srv : No data
+    srv --> wbs : 404 error
+end
+wbs --> st : Show exercise
+loop till the end of exercise
+st -> wbs : Answer
+wbs -> srv : PUT <answer data>
+srv -> exc : <answer data>
+exc -> exc : Register <answer data>
+end
+
+
+@enduml
