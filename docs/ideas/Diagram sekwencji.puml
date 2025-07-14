@@ -1,4 +1,4 @@
-@startuml shshs
+@startuml "Diagram sekwencji"
 
 actor "Student" as st
 participant "Website" as wbs
@@ -25,7 +25,7 @@ wbs -> srv : GET /<exercise>
 srv -> data : Find exercise data
 alt exercise data exist
     data --> srv : Exercise data
-    srv -> exc : Generate exercise HTML
+    srv -> exc : Generate exercise controller
     activate exc
     exc --> srv : Exercise HTML
     srv --> wbs : 200 /<exercise>
@@ -37,9 +37,17 @@ wbs --> st : Show exercise
 loop till the end of exercise
 st -> wbs : Answer
 wbs -> srv : PUT <answer data>
-srv -> exc : <answer data>
+srv -> exc : Register <answer data>
 exc -> exc : Register <answer data>
 end
+
+wbs -> srv : GET <final score>
+srv -> exc : Finish exercise
+exc --> srv : Exercise score
+deactivate exc
+srv -> data : Log exercise score
+srv --> wbs : 200 <final score>
+wbs --> st : View final score
 
 
 @enduml
