@@ -1,3 +1,4 @@
+<div hidden>
 @startuml "Diagram przypadków użycia"
 left to right direction
 actor "Student" as st
@@ -37,5 +38,7 @@ ucc2 <.. ucc3 : << extends >>
 ucc2 <.. ucc4 : << extends >>
 
 
-
 @enduml
+</div hidden>
+
+![]("Diagram przypadków użycia".svg)
