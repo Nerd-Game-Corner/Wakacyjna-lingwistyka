@@ -2,7 +2,7 @@
 
 ### Running the program
 
-The only requirement is having a working version of Docker installed.
+The only requirement is having a working version of Docker installed, particularly with Docker Desktop.
 The code is currently run with the following two commands:
 
 ```bash
@@ -10,13 +10,28 @@ docker build -t demo-spring-app .
 docker run -p 8080:8080 demo-spring-app
 ```
 
-When the program is running, you should be able to see "Hello, World!" in ```localhost:8080/hello``` in your browser.
-You should also see something else when you add ```?name=<your_favorite_text>``` after the address.
+When the program is running, you should be able to see "Hello, World!" in `localhost:8080/hello` in your browser.
+You should also see something else when you add `?name=<your_favorite_text>` after the address.
+You can also just access `localhost:8080` to see a preview of a filled out Thymeleaf HTML template.
 
 ### Recommended tools for developers
 
 Your IDE/code editor should have tools/extensions for the Java programming language, Docker, Maven, and Spring Boot.
 In the case of VS Code, the recommended extensions are the Extension Pack for Java, Docker, and Spring Boot Extension Pack.
+
+### Basic Spring framework concepts
+
+Spring relies a lot on its IoC (Inversion of Control) container.
+What that means in practice is that instead of a situation where we have to write all the dependencies of our classes on the Spring classes, it's the Spring architecture that depends on what we create.
+For example, instead of us having to explicitly declare that the `Application` class should look for all `@Controller` or `@RestController` annotated classes (which are the things that respond to specific HTTP requests), and then having to keep track of the control flow between them, we just declare the relevant classes and how they behave and rely on Spring's tools to detect all of them and decide when it should call which class in which method.
+
+It is also proposed to use the Thymeleaf HTML template engine.
+Its job is to detect when a `@Controller` method returns a `String`, after which it finds the appropriate HTML template in `src/main/resources/templates` and modifies it according to the data passed into a `Model` object in the method.
+Using template engines is standard in web development and the Thymeleaf engine has a specific dialect of templates made just for the Spring framework.
+
+Among the Maven dependencies there is also JPA, an ORM (object relational mapping) tool that will apparently allow us to convert the SQL results into Java objects and vice versa much more easily, and H2, a Java-based engine that is used by a tutorial I'm following in order to learn the basics of Spring, it's only temporary and I'm open to replacing it with any other SQL version we prefer.
+
+
 ### Repo Structure 
 #### /docs
  - Provides a clear overview of what Software we are creating
