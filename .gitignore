@@ -1,7 +1,4 @@
-### Diegowe rzeczy od Spring Boot ###
 HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -33,7 +30,7 @@ build/
 ### VS Code ###
 .vscode/
 
-### Stasiowe rzeczy ###
+### build adjacent ###
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -42,12 +39,14 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
-.mvn/timing.properties
+
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
 
 # Eclipse m2e generated files
 # Eclipse Core
 .project
+
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
