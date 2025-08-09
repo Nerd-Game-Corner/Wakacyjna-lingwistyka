@@ -17,6 +17,7 @@ To launch the Frontend at your 'localhost:5173' you need to run the following co
 
 ```bash
 npm install #to install dependencies
+#choose one from the following two
 npm run dev #to launch a development server
 npm run build #to create a production build
 ```
