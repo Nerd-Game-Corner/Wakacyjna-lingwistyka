@@ -16,19 +16,10 @@ The only requirement is having a working version of nodejs installed.
 To launch the Frontend at your 'localhost:5173' you need to run the following commands:
 
 ```bash
-npm install
+npm install #to install dependencies
+npm run dev #to launch a development server
+npm run build #to create a production build
 ```
-to install dependencies
-then:
-```bash
-npm run dev
-```
-to launch a development server
-or:
-```bash
-npm run build
-```
-to create a production build
 
 Note: The frontend is built with Vite + React in TypeScript
 
