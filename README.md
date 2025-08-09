@@ -1,8 +1,8 @@
 # Wakacyjna lingwistyka
 
 ### Running the program
-
-The only requirement is having a working version of Docker installed, particularly with Docker Desktop.
+#### Backend:
+The only requirement is having a working version of Docker installed.
 The code is currently run with the following two commands:
 
 ```bash
@@ -10,9 +10,27 @@ docker build -t demo-spring-app .
 docker run -p 8080:8080 demo-spring-app
 ```
 
-When the program is running, you should be able to see "Hello, World!" in `localhost:8080/hello` in your browser.
-You should also see something else when you add `?name=<your_favorite_text>` after the address.
-You can also just access `localhost:8080` to see a preview of a filled out Thymeleaf HTML template.
+When the backend is running, you should be able to see a JSON With a message field that says "Hello from backend!" in `localhost:8080/api/hello` in your browser.
+#### Frontend:
+The only requirement is having a working version of nodejs installed.
+To launch the Frontend at your 'localhost:5173' you need to run the following commands:
+
+```bash
+npm install
+```
+to install dependencies
+then:
+```bash
+npm run dev
+```
+to launch a development server
+or:
+```bash
+npm run build
+```
+to create a production build
+
+Note: The frontend is built with Vite + React in TypeScript
 
 ### Recommended tools for developers
 
