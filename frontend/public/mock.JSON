@@ -1,0 +1,9 @@
+{
+    "name":"translate",
+    "words":[
+        {"eng":"cat","pl":"kot"},
+        {"eng":"dog","pl":"pies"},
+        {"eng":"sheep","pl":"owca"},
+        {"eng":"platypus","pl":"dziobak"}
+    ]
+}
