@@ -12,9 +12,13 @@ export default function NavBar() {
           ☰
         </button>
 
-        <div className={styles.logo}>MyApp</div>
+        <div className={styles.logo}>
+           <NavLink to="/" onClick={() => setDrawerOpen(false)}>
+             Lingus
+           </NavLink>
+        </div>
 
-        <div className={styles.loginButton}>
+        <div className={styles.User}>
           <button className={styles.loginBtn}>Login</button>
         </div>
       </header>
