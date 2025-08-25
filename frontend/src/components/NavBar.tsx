@@ -27,8 +27,8 @@ export default function NavBar() {
       <div className={`${styles.drawer} ${drawerOpen ? styles.drawerOpen : ""}`}>
         <nav className={styles.drawerNav}>
           <NavLink to="/" onClick={() => setDrawerOpen(false)}>Home</NavLink>
-          <NavLink to="/about" onClick={() => setDrawerOpen(false)}>About</NavLink>
           <NavLink to="/mock" onClick={() => setDrawerOpen(false)}>Mock Exercise</NavLink>
+          <NavLink to="/about" onClick={() => setDrawerOpen(false)}>About</NavLink>
         </nav>
       </div>
 
